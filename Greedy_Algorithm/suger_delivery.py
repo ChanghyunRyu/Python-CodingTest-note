@@ -1,3 +1,4 @@
+# 백준 2839 설탕 배달 문제
 n = int(input())
 count = -1
 five_num = n//5
