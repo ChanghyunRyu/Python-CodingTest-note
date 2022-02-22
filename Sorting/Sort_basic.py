@@ -66,3 +66,16 @@ def quick_sort_python(data):
 
 
 print(quick_sort_python(data))
+
+
+# 계수정렬
+# 데이터의 개수 N, 데이터 중 최댓값이 K 일 경우, 최악의 시간복잡도 O(N+K)를 가짐
+# 최대값과 최소값 차이가 1,000,000 넘지 않을 때만 사용이 가능
+data = [7, 5, 9, 0, 3, 1, 6, 2, 9, 1, 4, 8, 0, 5, 2]
+count = [0 for i in range(10)]
+for i in range(len(data)):
+    count[data[i]] += 1
+
+for i in range(len(count)):
+    for j in range(count[i]):
+        print(i, end=' ')
