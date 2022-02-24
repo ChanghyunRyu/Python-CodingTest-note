@@ -23,3 +23,4 @@ for data in data_2:
     else:
         print('no', end=' ')
 
+# 해당 문제는 집합(set)을 이용한 형태로 사용하는 것이 더 간단할 수 있음.
