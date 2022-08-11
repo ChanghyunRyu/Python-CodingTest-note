@@ -6,7 +6,7 @@ for i in range(m):
     graph[com1-1].append(com2)
     graph[com2-1].append(com1)
 
-visited = [False for i in range(n)]
+visited_b = [False for i in range(n)]
 
 
 def virus_dfs(graph, v, visit):
@@ -18,8 +18,8 @@ def virus_dfs(graph, v, visit):
 
 
 count = 0
-virus_dfs(graph, 1, visited)
+virus_dfs(graph, 1, visited_b)
 for i in range(1,n):
-    if visited[i]:
+    if visited_b[i]:
         count += 1
 print(count)

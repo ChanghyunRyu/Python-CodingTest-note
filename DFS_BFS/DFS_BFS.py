@@ -37,12 +37,12 @@ def BFS(graph, start, visited, list):
 
 list_DFS = []
 list_BFS = []
-visited = [False for i in range(n)]
-DFS(graph, start, visited, list_DFS)
+visited_b = [False for i in range(n)]
+DFS(graph, start, visited_b, list_DFS)
 node_queue = deque()
 node_queue.append(start)
-visited = [False for i in range(n)]
-BFS(graph, start, visited, list_BFS)
+visited_b = [False for i in range(n)]
+BFS(graph, start, visited_b, list_BFS)
 for node in list_DFS:
     print(node, end=' ')
 print()
