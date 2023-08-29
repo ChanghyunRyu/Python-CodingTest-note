@@ -19,4 +19,4 @@
 ### Problem Solved
 
 - [**큰 수의 법칙**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/law%20of%20large%20numbers)  
-- [**잃어버린 괄호**]()
+- [**잃어버린 괄호**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/missing%20parenthesis)
