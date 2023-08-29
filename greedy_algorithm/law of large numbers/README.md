@@ -2,7 +2,7 @@
 
 ------
 
-이 문제의 큰 수의 법칙은 다양한 수로 이루어진 배열이 있을 때 
+ 이 문제의 큰 수의 법칙은 다양한 수로 이루어진 배열이 있을 때 
 주어진 수들을 m번 더하여 가장 큰 수를 만드는 법칙이다. 
 단, 배열의 특정한 인덱스(번호)에 해당하는 수가 연속해서 k번을 초과하여 더해질 수 없는 것이 이 법칙의 특징이다.
   
@@ -37,3 +37,16 @@
 따라서
 
 출력 = (m // (k+1)) * (가장 큰 수 * k + 두 번째로 큰수) + (m % (k+1)) * 가장 큰 수
+
+~~~
+n, m, k = map(int, input().split())
+data = list(map(int, input().split()))
+
+data.sort(reverse=True)
+first = data[0]
+second = data[1]
+
+answer = (m//(k+1))*((k*first)+second) + (m%(k+1))*first
+print(answer)
+
+~~~
