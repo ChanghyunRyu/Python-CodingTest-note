@@ -22,3 +22,4 @@
 - [**잃어버린 괄호**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/missing%20parenthesis)
 - [**회의실 배정**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/meeting%20room%20assignment)
 - [**설탕 배달**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/suger_delivery)
+- [**숫자 카드 게임**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/number%20card%20game)
