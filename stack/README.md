@@ -10,3 +10,6 @@
 
 ### Problem Solved
 
+- [**스택**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/stack/stack)
+- [**스택 수열**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/stack/stack%20sequence)
+- [**제로**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/stack/zero)
