@@ -22,6 +22,4 @@ BFS(너비 우선 탐색)이란 루트 노드(혹은 다른 임의의 노드)에
 
 ### Problem Solved
 
-*DFS*  
-
-*BFS*
+- [**DFS와BFS**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/dfs_bfs)  
