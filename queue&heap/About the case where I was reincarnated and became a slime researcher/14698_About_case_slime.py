@@ -18,4 +18,4 @@ for _ in range(t):
     result.append(elc)
 
 for r in result:
-    print(r%1000000007)
+    print(r % 1000000007)
