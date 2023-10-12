@@ -14,3 +14,9 @@
 - 완전이진트리 형태로 이루어져 있다.
 - 부모노드와 서브트리간 대소 관계가 성립된다.(반정렬 상태)
 - 이진탐색트리(BST)와 달리 중복된 값이 허용된다.
+
+****
+### Problem Solved
+
+- [**강의실 배정**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/queue%26heap/classroom%20assignment)
+- 
