@@ -19,4 +19,4 @@
 ### Problem Solved
 
 - [**강의실 배정**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/queue%26heap/classroom%20assignment)
-- 
+- [**보석 도둑**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/queue%26heap/jewel%20thief)
