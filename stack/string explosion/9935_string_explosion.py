@@ -2,12 +2,12 @@ arr = input()
 ex = input()
 
 temp = []
-arr_len = len(arr)
+ex_len = len(ex)
 
 for i in range(len(arr)):
     temp.append(arr[i])
-    if ''.join(temp[-arr_len:]) == ex:
-        for _ in range(arr_len):
+    if ''.join(temp[-ex_len:]) == ex:
+        for _ in range(ex_len):
             temp.pop()
 
 if temp:
