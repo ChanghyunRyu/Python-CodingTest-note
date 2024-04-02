@@ -15,3 +15,4 @@
 
 - [**부품 찾기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/finding_parts)
 - [**떡볶이 떡 만들기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/rice_cake)
+- [**랜선 자르기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/1654_cut_LAN_cable)
