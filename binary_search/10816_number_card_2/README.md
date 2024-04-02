@@ -18,3 +18,21 @@
 ### 출력
 
 - 첫째 줄에 입력으로 주어진 M개의 수에 대해서, 각 수가 적힌 숫자 카드를 상근이가 몇 개 가지고 있는지를 공백으로 구분해 출력한다.
+
+---
+
+~~~
+n = int(input())
+card = list(map(int, input().split()))
+
+m = int(input())
+number = list(map(int, input().split()))
+
+arr = [0]*20000001
+for c in card:
+    arr[c+10000000] += 1
+
+for n in number:
+    print(arr[n+10000000], end=' ')
+
+~~~
