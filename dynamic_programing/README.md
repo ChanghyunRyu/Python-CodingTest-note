@@ -47,4 +47,4 @@ def dynamic_fibonacci(n):
 
 ### Problem solved
 
-
+- [**1로 만들기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/made_one)
