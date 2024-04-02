@@ -14,3 +14,31 @@
 ### 출력
 
 - 적어도 M만큼의 떡을 집에 가져가기 위해 절단기에 설정할 수 있는 높이의 최댓값을 출력한다.
+
+### 설명
+
+- 이진 탐색 문제이자, Parametric Search 유형의 문제이다. 파라메트릭 서치는 최적화 문제를 결정문제로 바꾸어 해결하는 기법이다.
+- 원하는 조건을 만족하는 가장 알맞은 값을 찾는 문제에 주로 파라메트릭 서치를 사용한다.
+
+~~~
+n, m = map(int, input().split())
+ricecake = list(map(int, input().split()))
+ricecake.sort()
+start, end = 0, ricecake[len(ricecake)-1]
+
+while start < end:
+    mid = (start+end)//2
+    sum = 0
+    for r in ricecake:
+        if r > mid:
+            sum += r - mid
+    if sum < m:
+        start, end = start, mid-1
+    elif sum == m:
+        break
+    else:
+        start, end = mid+1, end
+
+print(mid)
+
+~~~

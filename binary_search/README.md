@@ -8,3 +8,10 @@
 
 
 - 이진탐색의 시간 복잡도는 O(log n)으로 대용량의 데이터에서 특정 값의 위치를 찾는데 용이하다.
+
+---
+
+### Problem solved
+
+- [**부품 찾기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/finding_parts)
+- [**떡볶이 떡 만들기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/rice_cake)
