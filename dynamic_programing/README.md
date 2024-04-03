@@ -53,4 +53,4 @@ def dynamic_fibonacci(n):
 - [**RGB 거리**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/1149_RGB_street)
 - [**01타일**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/1904_01_tile)
 - [**연속합**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/1912_continuous_sum)
-- 
+- [**정수 삼각형**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/1932_integer_triangle)
