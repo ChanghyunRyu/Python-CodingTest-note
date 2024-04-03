@@ -48,3 +48,5 @@ def dynamic_fibonacci(n):
 ### Problem solved
 
 - [**1로 만들기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/made_one)
+- [**개미 전사**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/ant_warrior)
+- [**알고리즘 수업 1 - 피보나치 수열**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/24416_algorithm_class_fibonacci_num_1)
