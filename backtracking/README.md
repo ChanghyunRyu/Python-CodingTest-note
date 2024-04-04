@@ -1,4 +1,4 @@
-# # Backtracking Algorithm
+#  백트래킹 알고리즘(Backtracking Algorithm)
 
 백 트래킹(backtracking)이란?: 해를 찾는 도중 해가 아니어서 막히면, 되돌아가서 다시 해를 찾아가는 기법
 
