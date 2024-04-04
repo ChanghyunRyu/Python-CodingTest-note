@@ -18,5 +18,12 @@
    
 7. 아닌 경우, 시험적 거리가 가장 작은 다음 미방문 꼭짓점을 새로운 "현재 위치"로 선택하고 3단계로 돌아간다.
 
-다익스트라 최단 경로 알고리즘 구현은 다음을 참고
+다익스트라 최단 경로 알고리즘 구현은 다음을 참고  
 
+[**Python 다익스트라 알고리즘 구현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/Dijkstra_algorithm)
+
+---
+
+### Problem solved
+
+- 
