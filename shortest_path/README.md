@@ -1,10 +1,11 @@
 # 최단 경로 알고리즘
 
----
+------
 
 최단 경로 알고리즘: '길찾기' 라고도 불리는 알고리즘으로 말 그대로 가장 짧은 경로를 찾는 알고리즘.
 
 - ### 다익스트라 최단 경로 알고리즘
+---
 
 1. 모든 꼭짓점을 미방문 상태로 표시한다.
 2. 모든 꼭짓점에 시험적 거리 값을 부여한다. (초기점=현재 위치를 0, 다른 모든 꼭짓점을 무한대로 설정)
@@ -22,8 +23,8 @@
 
 [**Python 다익스트라 알고리즘 구현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/Dijkstra_algorithm)
 
----
+------
 
 ### Problem solved
 
-- 
+- [**1238번 파티**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/1238_party)
