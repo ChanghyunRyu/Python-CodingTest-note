@@ -31,3 +31,4 @@ def dijkstra(start, graph):
 o2a = dijkstra(x, path)
 a2o = dijkstra(x, path_reverse)
 print(max([a2o[i] + o2a[i] for i in range(1,n+1) if i != x]))
+

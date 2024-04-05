@@ -1,4 +1,4 @@
-# # 누적합(Prefix Sum, Cumulative Sum)
+# 누적합(Prefix Sum, Cumulative Sum)
 
 누적합(prefix sum)이란, 단어 그대로 **나열된 숫자의 누적된 합**이다.  
 수열 An이 있다고 한다면, 누적합 Pn은 P3 = A1 + A2 + A3이 된다.   
