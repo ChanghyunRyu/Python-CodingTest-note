@@ -9,6 +9,8 @@ DFS(깊이 우선 탐색)이란 루트 노드(혹은 다른 임의의 노드)에
 
 모든 노드를 방문하고자 하는 경우에 이 방법을 선택한다.
 
+[**Python DFS 구현**]()
+
 ### BFS(Breadth-First Search)  
 
 BFS(너비 우선 탐색)이란 루트 노드(혹은 다른 임의의 노드)에서 시작해 인접한 노드를 먼저 탐색하는 방법.  
@@ -18,8 +20,10 @@ BFS(너비 우선 탐색)이란 루트 노드(혹은 다른 임의의 노드)에
 
 탐색 수행함에 있어 O(N) 시간이 소모되어 일반적인 경우, DFS보다 수행 시간이 좋은편에 속한다.
 
+[**Python BFS 구현**]()
+
 ------
 
 ### Problem Solved
 
-- [**DFS와 BFS**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/dfs_bfs)  
+- [**1260번 DFS와 BFS**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/dfs_bfs)  
