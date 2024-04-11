@@ -20,7 +20,7 @@
    
 7. 아닌 경우, 시험적 거리가 가장 작은 다음 미방문 노드를 새로운 "현재 위치"로 선택하고 3으로 돌아간다.
 
-[**Python 다익스트라 알고리즘 구현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/Dijkstra_algorithm)
+[**Python 다익스트라 알고리즘 구현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/dijkstra_algorithm)
 
 - ### 플로이드 워셜 알고리즘(Floyd-Warshall Algorithm)
 
@@ -37,6 +37,20 @@ shortestPath(i, j, k) = min(shortestPath(i, j, k-1), shortestPath(i, k, k-1)+sho
 
 [**Python 플로이드 워셜 알고리즘 구현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/floyd_warshall_algorithm)
 
+- ### 벨만-포드 알고리즘(Bellman-Ford Algorithm)
+
+가중 그래프에서 한 지점으로부터 다른 지점까지의 최단거리를 구하는 알고리즘이다.  
+단, 위의 두 알고리즘과 달리 **간선의 가중치가 음수일 때도 최단 거리를 구할 수 있다**는 장점이 있다.  
+
+1. 출발 노드를 설정한다.
+2. 최단 거리 테이블을 초기화한다.
+3. 모든 간선 E를 하나씩 확인한다.
+4. 각 간선을 거쳐 다른 노드로 가는 비용을 계산하여 최단 거리 테이블을 갱신한다.
+5. 3부터의 과정을 각 노드에 대하여 (V-1)번 반복한다.
+6. 음수 간선 순환이 발생하는지 체크하고 싶다면 위의 과정을 한 번더 수행하여 최단거리 테이블이 갱신되는지 확인한다.
+
+[**Python 벨만-포드 알고리즘 구현**]()
+
 ------
 
 ### Problem solved
@@ -45,5 +59,6 @@ shortestPath(i, j, k) = min(shortestPath(i, j, k-1), shortestPath(i, k, k-1)+sho
 - [**1504번 특정한 최단 경로**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/1504_specific_shortest_path)
 - [**1753번 최단 경로**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/1753_shortest_path)
 - [**1956번 운동**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/1956_work_out)
+- [**9370번 미확인 도착지**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/9370_unconfirmed_destination)
 - [**11404번 플로이드**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/11404_floyd)
 - [**13549번 숨박꼭질 3**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/13549_hide_and_seek_3)
