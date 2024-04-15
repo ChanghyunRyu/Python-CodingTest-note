@@ -20,3 +20,31 @@
 - 1번 컴퓨터가 웜 바이러스에 걸렸을 때, 1번 컴퓨터를 통해 웜 바이러스에 걸리게 되는 컴퓨터의 수를 첫째 줄에 출력한다.
 
 ---
+
+~~~
+import sys
+from collections import deque
+
+n = int(input())
+m = int(input())
+graph = [[] for _ in range(n+1)]
+for _ in range(m):
+    a, b = map(int, sys.stdin.readline().split())
+    graph[a].append(b)
+    graph[b].append(a)
+
+visited = [False]*(n+1)
+visited[1] = True
+q = deque([1])
+count = 0
+while q:
+    node = q.popleft()
+    for i in graph[node]:
+        if not visited[i]:
+            count += 1
+            visited[i] = True
+            q.append(i)
+
+print(count)
+
+~~~

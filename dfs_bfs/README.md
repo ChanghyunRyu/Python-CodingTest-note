@@ -35,6 +35,7 @@ BFS(너비 우선 탐색)이란 루트 노드(혹은 다른 임의의 노드)에
 ### Problem Solved
 
 - [**1260번 DFS와 BFS**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/dfs_bfs)  
+- [**2606번 바이러스**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/2606_virus)
 - [**24444번 알고리즘 수업 - 너비 우선 탑색 1**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/24444_breadth_first_search_1)
 - [**24445번 알고리즘 수업 - 너비 우선 탐색 2**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/24445_breadth_first_search_2)
 - [**24479번 알고리즘 수업 - 깊이 우선 탐색 1**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/24479_depth_first_search_1)
