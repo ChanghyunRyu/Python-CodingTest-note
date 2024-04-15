@@ -25,6 +25,8 @@ N개의 정점과 M개의 간선으로 구성된 무방향 그래프(undirected 
 
 ---
 
+bfs를 내림차순으로 구현한다.
+
 ~~~
 import sys
 from collections import deque
