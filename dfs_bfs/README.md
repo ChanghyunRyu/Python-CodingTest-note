@@ -34,6 +34,7 @@ BFS(너비 우선 탐색)이란 루트 노드(혹은 다른 임의의 노드)에
 
 ### Problem Solved
 
+- [**1012번 유기농 배추**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/1012_organic_cabbage)
 - [**1260번 DFS와 BFS**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/dfs_bfs)  
 - [**1697번 숨박꼭질**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/1697_hide_and_seek)
 - [**2178번 미로탐색**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/2178_maze_search)
