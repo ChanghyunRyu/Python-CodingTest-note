@@ -62,6 +62,8 @@ for i in range(1, n+1):
 이점을 개선하기 위하여 다음 구현에서는 우선순위 큐 자료구조를 사용한다.  
 해당 방법으로 구현된 다익스트라 알고리즘의 시간복잡도는 O(ElogV)이다. (E는 간선 개수, V는 노드 개수)
 
+[**우선 순위 큐에 대한 자세한 설명**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/queue%26heap)
+
 ~~~
 import heapq
 import sys
