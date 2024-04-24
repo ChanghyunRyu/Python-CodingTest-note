@@ -28,6 +28,8 @@ while q:
             q.append((nx, ny, 1))
         if arr[nx][ny] == 0 and guidance[nx][ny][check] == INF:
             guidance[nx][ny][check] = guidance[x][y][check]+1
+            if check == 0:
+                guidance[nx][ny][1] = guidance[nx][ny][0]
             q.append((nx, ny, check))
 if guidance[n-1][m-1][1] == INF and guidance[n-1][m-1][0] == INF:
     print(-1)

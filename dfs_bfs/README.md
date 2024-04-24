@@ -38,6 +38,7 @@ BFS(너비 우선 탐색)이란 루트 노드(혹은 다른 임의의 노드)에
 - [**1260번 DFS와 BFS**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/dfs_bfs)  
 - [**1697번 숨박꼭질**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/1697_hide_and_seek)
 - [**2178번 미로탐색**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/2178_maze_search)
+- [**2206번 벽 부수고 이동하기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/2206_crashing_wall)
 - [**2606번 바이러스**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/2606_virus)
 - [**2667번 단지번호붙이기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/2667_numbering)
 - [**7562번 나이트의 이동**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs/7562_knight's_movement)
