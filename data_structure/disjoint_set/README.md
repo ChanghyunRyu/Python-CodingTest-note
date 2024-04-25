@@ -38,6 +38,6 @@ def find_parent(x):
     1.2. 루트 노드가 서로 같다면 사이클이 발생한 것이다.
 2. 그래프에 포함된 모든 간선에 대하여 1번 과정을 반복한다.
 
-[**Python을 통한 사이클 판별 구현**]()
+[**Python을 통한 사이클 판별 구현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/blob/main/data_structure/disjoint_set/cycle_check.py)
 
 ---
