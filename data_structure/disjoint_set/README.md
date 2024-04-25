@@ -16,6 +16,28 @@
     1-2. A'를 B'의 부모노드로 설정한다.
 2. 모든 union 연산을 처리할 때까지 1번 과정을 반복한다. 
 
-[**Python을 통한 Union-Find 연산 구현**]()
+[**Python을 통한 Union-Find 연산 구현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/blob/main/data_structure/disjoint_set/union-find.py)
+
+위의 방법대로 서로소 집합 자료구조를 구현하는 경우, 연산의 시간 복잡도가 O(VM) (V는 노드의 개수, M은 연산의 개수)가 되어 비효율적일 수 있다.
+따라서 find 함수를 최적화라는 것이 필요하다.   
+
+이러한 최적화는 경로 압축(Path Compression) 기법을 사용하여 find 함수를 변경해주면 간단하게 최적화가 가능하다.
+~~~
+def find_parent(x):
+    if parent[x] != x:
+        parent[x] = find_parent(parent[x])
+    return parent[x]
+~~~
+
+### 서로소 집합을 활용한 사이클 판별
+
+서로소 집합은 무방향 그래프 내에서의 사이클을 판별할 때 사용할 수 있는 특징이 있다. 과정은 다음과 같다.
+
+1. 각 간선을 확인하여 두 노드의 루트 노드를 확인하다.  
+    1.1. 루트 노드가 서로 다르다면 두 노드에 대하여 union 연산을 수행한다.  
+    1.2. 루트 노드가 서로 같다면 사이클이 발생한 것이다.
+2. 그래프에 포함된 모든 간선에 대하여 1번 과정을 반복한다.
+
+[**Python을 통한 사이클 판별 구현**]()
 
 ---

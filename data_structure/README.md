@@ -7,6 +7,9 @@
 
 다음 문서는 다양한 자료구조에 대한 설명과 관련 문제들을 정리하기 위하여 작성하였다.
 
+
+정리한 자료구조는 다음과 같다.
+
 - [**큐(Queue)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure/queue%26heap)
 - [**스택(stack)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure/stack)
-- [**서로소 집합(Disjoint Set)**]()
+- [**서로소 집합(Disjoint Set)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure/disjoint_set)
