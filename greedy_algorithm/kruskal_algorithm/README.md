@@ -13,7 +13,7 @@
     2.2. 사이클이 발생하는 경우 최소 신장 트리에 포함시키지 않는다.
 3. 모든 간선에 대하여 2번 과정을 반복한다.
 
-[**Python을 이용한 크루스칼 알고리즘 구현**]()
+[**Python을 이용한 크루스칼 알고리즘 구현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/blob/main/greedy_algorithm/kruskal_algorithm/kruskal_algorithm.py)
 
 크루스칼 알고리즘 구현을 알아보기 이전에 서로소 집합 자료구조와 이를 이용한 사이클 판별법을 알아두는 것이 좋다.  
 

@@ -13,4 +13,5 @@
 - [**이분 탐색(Binary Search)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search)
 - [**최단 경로(Shortes Path)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path)
 - [**누적합(Prefix Sum)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/prefix_sum)
+- [**정렬(Sorting)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/sorting)
 - [**DFS / BFS**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dfs_bfs)
