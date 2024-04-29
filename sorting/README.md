@@ -41,7 +41,7 @@
      1. 큐에서 원소를 꺼내 해당 노드에서 출발하는 간선을 그래프에서 제거한다.
      2. 새롭게 진입 차수가 0이 된 노드를 큐에 넣는다.
 
-[**Python을 이용한 위상 정렬 구현**]()
+[**Python을 이용한 위상 정렬 구현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/blob/main/sorting/sort/topology_sort.py)
 
 ### Problem Solved
 

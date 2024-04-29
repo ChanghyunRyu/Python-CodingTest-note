@@ -15,7 +15,9 @@
 - **최적 부분 구조(Optimal Substructure):** 문제에 대한 최종 해결 방법은 부분 문제에 대한 최적 문제 해결 방법으로 구성된다.
 
 물론 해당 조건을 만족하지 않더라도 그리디 알고리즘은 근사 알고리즘으로서 사용이 가능하다.(최적해를 구하지 못 하는 것뿐이다.)  
-  
+
+- [**크루스칼 알고리즘**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/kruskal_algorithm)
+
 ****
 ### Problem Solved
 
