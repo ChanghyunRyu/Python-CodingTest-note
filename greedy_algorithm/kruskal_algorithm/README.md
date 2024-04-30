@@ -19,4 +19,8 @@
 
 [**서로소 집합 자료구조**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure/disjoint_set)
 
+---
 
+### Problem Solved
+
+- [**9372번 상근이의 여행**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/kruskal_algorithm/9372_travel)
