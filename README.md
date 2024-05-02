@@ -9,6 +9,7 @@
 ***Catagory***
 
 - [**그리디 알고리즘(Greedy Algorithm)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm)
+- [**그래프 이론(Graph Theory)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/graph_theory)
 - [**다이나믹 프로그래밍(Dynamic Programing)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing)
 - [**이분 탐색(Binary Search)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search)
 - [**최단 경로(Shortes Path)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path)

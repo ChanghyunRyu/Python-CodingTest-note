@@ -28,4 +28,4 @@ n개의 정점을 가지는 그래프의 최소 간선의 수는 (n-1)개이고,
 그래프에서 최소 비용으로 신장 트리를 만드는 알고리즘을 최소 신장 트리 알고리즘이라고 하며 크루스칼 알고리즘, 프림 알고리즘 등이 이에 해당한다.
 
 - [**크루스칼 알고리즘(Kruskal Algorithm)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/kruskal_algorithm)
-- [**프림 알고리즘(Prim's Algorithm)**]()
+- [**프림 알고리즘(Prim's Algorithm)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/prims_algorithm)

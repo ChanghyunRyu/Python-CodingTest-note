@@ -14,7 +14,7 @@
 
 프림 알고리즘의 시간복잡도는 O(V^2)로, 다익스트라 알고리즘처럼 우선순위 큐를 사용할 경우, O(ElogV)가 된다. (V = 정점의 개수, E= 간선의 개수)
 
-[**Python을 이용한 프림 알고리즘 구현**]()
+[**Python을 이용한 프림 알고리즘 구현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/blob/main/greedy_algorithm/prims_algorithm/prims_algorithm.py)
 
 ### 프림 알고리즘 vs 크루스칼 알고리즘
 
