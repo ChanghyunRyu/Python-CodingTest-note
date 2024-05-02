@@ -23,4 +23,5 @@
 
 ### Problem Solved
 
+- [**1197번 최소 스패닝 트리**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/kruskal_algorithm/1197_minimum_spanning_tree)
 - [**9372번 상근이의 여행**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/kruskal_algorithm/9372_travel)
