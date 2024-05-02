@@ -41,3 +41,7 @@ def find_parent(x):
 [**Python을 통한 사이클 판별 구현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/blob/main/data_structure/disjoint_set/cycle_check.py)
 
 ---
+
+### Problem Solved
+
+- [**1717번 집합의 표현**]()

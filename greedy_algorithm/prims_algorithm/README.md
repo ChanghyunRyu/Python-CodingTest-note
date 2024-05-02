@@ -21,3 +21,9 @@
 프림 알고리즘의 시간 복잡도는 O(ElogV)  
 크루스칼 알고리즘의 시간 복잡도는 O(ElogE)  
 따라서,그래프 내의 간선이 많은 경우는 프림 알고리즘이 간선이 적은 경우는 크루스칼 알고리즘이 유리하다.
+
+---
+
+### Problem Solved
+
+- [**17472번 다리 만들기 2**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/kruskal_algorithm/17472_create_bridge_2)
