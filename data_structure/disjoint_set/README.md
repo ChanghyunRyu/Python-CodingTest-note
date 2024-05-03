@@ -44,4 +44,4 @@ def find_parent(x):
 
 ### Problem Solved
 
-- [**1717번 집합의 표현**]()
+- [**1717번 집합의 표현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure/disjoint_set/1717_expression_of_set)
