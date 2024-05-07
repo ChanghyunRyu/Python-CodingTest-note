@@ -66,4 +66,40 @@ for _ in range(t):
     print(dp[0][k-1])
 ~~~
 
-단, 해당 해답을 제출해보면 알겠지만 **PyPy3로 제출해야지만 시간초과가 나지 않는다.**
+단, 해당 해답을 제출해보면 알겠지만 **PyPy3로 제출해야지만 시간초과가 나지 않는다.**  
+이를 해결하기 위해서는 동적계획법 최적화하여야 한다.  
+
+다음은 동적계획법 최적화 방법 중 하나인 Knuth's Optimization을 사용하는 방법이다.  
+원래는 i~j 사이의 모든 숫자 k를 검사하였고 이 때문에 거의 O(n^3)의 시간복잡도를 지녔지만 이를 사용하면 O(n^2)의 시간복잡도를 가지게 된다.  
+
+Knuth's Optimization에 대해서는 동적계획법에 설명해놓을 생각이다.
+
+~~~
+import sys
+INF = int(1e9)
+
+t = int(input())
+for _ in range(t):
+    k = int(sys.stdin.readline().rstrip())
+    files = list(map(int, sys.stdin.readline().split()))
+
+    pfs = [0]*(k+1)
+    num = [[0]*k for _ in range(k)]
+    dp = [[0]*k for _ in range(k)]
+    for i in range(k):
+        num[i][i] = i
+        pfs[i+1] = pfs[i]+files[i]
+
+    for d in range(1, k):
+        for start in range(k-d):
+            end = start+d
+            dp[start][end] = INF
+            for mid in range(num[start][end-1], min(num[start+1][end]+1, end)):
+                cost = dp[start][mid]+dp[mid+1][end]+pfs[end+1]-pfs[start]
+                if dp[start][end] > cost:
+                    dp[start][end] = cost
+                    num[start][end] = mid
+
+    print(dp[0][k-1])
+
+~~~
