@@ -18,7 +18,7 @@ def fibonacci(n):
 
 - 그러나 다음과 같이 재귀함수를 사용할 경우 다음과 같은 문제점이 발생합니다.  
 
-<img src="https://user-images.githubusercontent.com/83490220/179691368-c2160d1f-6293-42cc-a506-abddf6623149.png">
+<img src="https://user-images.githubusercontent.com/83490220/179691368-c2160d1f-6293-42cc-a506-abddf6623149.png" height="300">
 
 위의 그림에서는 피보나치(3)을 두번 계산하게 되지만 숫자 n이 커질수록 중복 계산하는 횟수는 기하급수적으로 늘어납니다.  
 이러한 문제점을 해결하기 위해서 등장한 것이 동적 계획법입니다.
@@ -44,6 +44,10 @@ def dynamic_fibonacci(n):
 
 피보나치 수열의 재귀함수와 동적 계획법의 실행 횟수가 궁금하면 24416번 문제를 참고하면 된다.  
 30의 경우; 재귀함수: 832040번, 동적계획법: 28번
+
+### Knuth Optimiztion
+
+- 
 
 ---
 
