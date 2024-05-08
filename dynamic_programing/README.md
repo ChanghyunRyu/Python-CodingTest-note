@@ -65,7 +65,13 @@ LIS는 동적 계획법으로 풀 수 있는 대표적인 알고리즘으로 다
 - **방법2. O(NlogN):** 위의 방법 1은 시간복잡도가 O(N^2)으로 동작 속도가 느리다. 이는 이분 탐색을 활용하여 해결할 수 있다. 
 기존 LIS를 저장하는 dp 배열 외에 dp[j] = k를 만족하는 j 중에서 A[j] 값이 가장 작은 j를 따로 저장해놓는 것이다.
 
-1. 
+
+  1. 현재 i번째 원소를 탐색하고 있다고 가정한다. 그리고 가장 작은 j를 저장하고 있는 배열 B가 있다고 한다. B[k] = k길이의 수열 중 마지막 숫자가 가장 작은 수열의 마지막 숫자
+2. 만약 A[i]가 B의 마지막 원소보다 크다고 한다면 B 끝에 A[i]를 삽입하고 dp[i] = B의 길이가 된다. 만약 크지 않다면 이진탐색을 이용하여 B에서 A[i]의 위치를 탐색한다.
+3. 탐색하여 나온 위치가 k라고 했을 때, dp[i] = B[k]가 된다. 또한 A[i] < B[k]이면 B[k]를 A[i]로 최신화해준다.
+4. 이를 수열 끝까지 반복한 후, B의 최종 크기를 반환하면 된다.
+
+[**Python을 이용한 LIS 구현**]()
 
 ---
 
@@ -84,4 +90,6 @@ LIS는 동적 계획법으로 풀 수 있는 대표적인 알고리즘으로 다
 - [**1912번 연속합**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/1912_continuous_sum)
 - [**1932번 정수 삼각형**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/1932_integer_triangle)
 - [**2156번 포도주 시식**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/2156_wine_tasting)
+- [**2565번 전깃줄**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/2565_power_cord)
+- [**2597번 계단 오르기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/2579_climbing_stairs)
 - [**24416번 알고리즘 수업 1 - 피보나치 수열**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/24416_algorithm_class_fibonacci_num_1)
