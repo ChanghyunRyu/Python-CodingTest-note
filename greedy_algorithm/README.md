@@ -30,4 +30,5 @@
 - [**1931번 회의실 배정**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/meeting%20room%20assignment)
 - [**1946번 신입 사원**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/new%20recruits)
 - [**2839번 설탕 배달**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/suger_delivery)
+- [**11047번 동전 0**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/11047_coin_zero)
 
