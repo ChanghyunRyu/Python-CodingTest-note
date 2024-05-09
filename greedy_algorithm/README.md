@@ -21,12 +21,13 @@
 ****
 ### Problem Solved
 
-- [**큰 수의 법칙**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/law%20of%20large%20numbers)  
-- [**잃어버린 괄호**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/missing%20parenthesis)
-- [**회의실 배정**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/meeting%20room%20assignment)
-- [**설탕 배달**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/suger_delivery)
+- [**큰 수의 법칙**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/law%20of%20large%20numbers)
 - [**숫자 카드 게임**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/number%20card%20game)
 - [**1이 될 때까지**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/until%20one)
-- [**신입 사원**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/new%20recruits)
-- [**겹치는 선분**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/overlapping%20lines)
-- [**도서관**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/library)
+- [**1461번 도서관**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/library)
+- [**1541번 잃어버린 괄호**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/missing%20parenthesis)
+- [**1689번 겹치는 선분**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/overlapping%20lines)
+- [**1931번 회의실 배정**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/meeting%20room%20assignment)
+- [**1946번 신입 사원**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/new%20recruits)
+- [**2839번 설탕 배달**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/suger_delivery)
+

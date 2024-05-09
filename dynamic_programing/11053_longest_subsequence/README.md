@@ -19,6 +19,12 @@
 
 ---
 
+### Problem Solved Check
+
+- [x] 1회
+- [ ] 2회
+- [ ] 3회
+
 ~~~
 n = int(input())
 A = list(map(int, input().split()))

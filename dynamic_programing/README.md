@@ -93,6 +93,7 @@ LIS는 동적 계획법으로 풀 수 있는 대표적인 알고리즘으로 다
 - [**2565번 전깃줄**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/2565_power_cord)
 - [**2597번 계단 오르기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/2579_climbing_stairs)
 - [**9251번 LCS**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/9251_LCS)
+- [**11049번 행렬 곱셈 순서**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/11049_matrix_multiplication_order)
 - [**11053번 가장 긴 증가하는 부분 수열**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/11053_longest_subsequence)
 - [**11054번 가장 긴 바이토닉 부분 수열**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/11054_longest_bitonic_subsequence)
 - [**12865번 평범한 배낭**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/12865_plain_backpack)

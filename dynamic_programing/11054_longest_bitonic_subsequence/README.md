@@ -20,6 +20,13 @@
 - 첫째 줄에 수열 A의 부분 수열 중에서 가장 긴 바이토닉 수열의 길이를 출력한다.
 
 ---
+
+### Problem Solved Check
+
+- [x] 1회
+- [ ] 2회
+- [ ] 3회
+
 ~~~
 from bisect import bisect_left
 
