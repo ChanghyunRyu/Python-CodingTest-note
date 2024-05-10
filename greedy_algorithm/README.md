@@ -24,6 +24,7 @@
 - [**큰 수의 법칙**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/law%20of%20large%20numbers)
 - [**숫자 카드 게임**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/number%20card%20game)
 - [**1이 될 때까지**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/until%20one)
+- [**모험가 길드**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/adventurer's_guild)
 - [**1461번 도서관**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/library)
 - [**1541번 잃어버린 괄호**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/missing%20parenthesis)
 - [**1689번 겹치는 선분**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/overlapping%20lines)

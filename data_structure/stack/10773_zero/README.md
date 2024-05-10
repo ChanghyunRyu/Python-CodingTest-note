@@ -31,15 +31,15 @@
 
 ~~~
 import sys
+from collections import deque
+
 k = int(input())
-
-stack = []
+s = deque([])
 for _ in range(k):
-    num = int(sys.stdin.readline())
+    num = int(sys.stdin.readline().rstrip())
     if num != 0:
-        stack.append(num)
+        s.append(num)
     else:
-        stack.pop()
-
-print(sum(stack))
+        s.pop()
+print(sum(s))
 ~~~
