@@ -18,6 +18,12 @@
 
 ------
 
+### Problem Solved Check
+
+- [x] 1회 24/05/10
+- [ ] 2회
+- [ ] 3회
+
 ### 풀이
 
 문제에서 제시하는 식은 '-', '+'로만 이루어진다.  
@@ -66,4 +72,24 @@ for i in range(len(equation)):
         if equation[i] == '-':
             minus = True
 print(result)
+~~~
+~~~
+line = input()
+result = 0
+start = 0
+minus = 1
+
+for i in range(len(line)):
+    if line[i] == '+' or line[i] == '-':
+        number = int(line[start:i])
+        result += minus*number
+        start = i+1
+    elif i == len(line)-1:
+        number = int(line[start:i+1])
+        result += minus * number
+        start = i + 1
+    if line[i] == '-':
+        minus = -1
+print(result)
+
 ~~~
