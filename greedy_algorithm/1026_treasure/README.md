@@ -23,3 +23,22 @@ S의 최솟값을 출력하는 프로그램을 작성하시오.
 - 첫째 줄에 S의 최솟값을 출력한다.
 
 ---
+
+### Problem Solved Check
+
+- [x] 1회 24/05/13
+- [ ] 2회
+- [ ] 3회
+
+~~~
+n = int(input())
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+
+A.sort()
+B.sort(reverse=True)
+result = 0
+for i in range(n):
+    result += A[i]*B[i]
+print(result)
+~~~
