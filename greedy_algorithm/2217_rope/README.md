@@ -20,4 +20,24 @@ N(1 ≤ N ≤ 100,000)개의 로프가 있다. 이 로프를 이용하여 이런
 - 첫째 줄에 답을 출력한다.
 
 ---
+### Problem Solved Check
 
+- [x] 1회 24/05/13
+- [ ] 2회
+- [ ] 3회
+
+~~~
+import sys
+
+n = int(input())
+ropes = []
+for _ in range(n):
+    ropes.append(int(sys.stdin.readline().rstrip()))
+ropes.sort()
+
+result = 0
+for i in range(n):
+    result = max(result, ropes[i]*(n-i))
+print(result)
+
+~~~
