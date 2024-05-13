@@ -31,6 +31,8 @@
 - [**1689번 겹치는 선분**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/overlapping%20lines)
 - [**1931번 회의실 배정**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/meeting%20room%20assignment)
 - [**1946번 신입 사원**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/new%20recruits)
+- [**2217번 로프**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/2217_rope)
+- [**2720번 세탁소 사장 동혁**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/2720_laundry_owner)
 - [**2839번 설탕 배달**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/suger_delivery)
 - [**5585번 거스름돈**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/5585_change#problem-solved-check)
 - [**11047번 동전 0**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/11047_coin_zero)

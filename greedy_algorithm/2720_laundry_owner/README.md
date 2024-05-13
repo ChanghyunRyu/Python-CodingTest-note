@@ -27,3 +27,29 @@
 - 각 테스트케이스에 대해 필요한 쿼터의 개수, 다임의 개수, 니켈의 개수, 페니의 개수를 공백으로 구분하여 출력한다.
 
 ---
+### Problem Solved Check
+
+- [x] 1회 24/05/13
+- [ ] 2회
+- [ ] 3회
+~~~
+import sys
+
+t = int(input())
+coins = [25, 10, 5, 1]
+for _ in range(t):
+    change = int(sys.stdin.readline().rstrip())
+    i = 0
+    result = [0]*4
+    while change > 0:
+        if change < coins[i]:
+            i += 1
+            continue
+        else:
+            result[i] += change//coins[i]
+            change %= coins[i]
+    for r in result:
+        print(r, end=' ')
+    print()
+
+~~~
