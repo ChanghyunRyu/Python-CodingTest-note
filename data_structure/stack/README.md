@@ -16,3 +16,4 @@
 - [**스택**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/stack/stack)
 - [**스택 수열**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/stack/stack%20sequence)
 - [**10773번 제로**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/stack/zero)
+- [**28278번 스택 2**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure/stack/28278_stack_2)
