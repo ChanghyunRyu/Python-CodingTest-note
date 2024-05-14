@@ -29,6 +29,7 @@
 - [**1461번 도서관**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/library)
 - [**1541번 잃어버린 괄호**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/missing%20parenthesis)
 - [**1689번 겹치는 선분**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/overlapping%20lines)
+- [**1789번 수들의 합**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/1789_sum_of_num)
 - [**1931번 회의실 배정**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/meeting%20room%20assignment)
 - [**1946번 신입 사원**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/new%20recruits)
 - [**2217번 로프**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/2217_rope)
