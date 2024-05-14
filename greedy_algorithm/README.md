@@ -36,6 +36,7 @@
 - [**2720번 세탁소 사장 동혁**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/2720_laundry_owner)
 - [**2839번 설탕 배달**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/suger_delivery)
 - [**5585번 거스름돈**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/5585_change#problem-solved-check)
+- [**10162번 전자레인지**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/10162_microwave)
 - [**11047번 동전 0**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/11047_coin_zero)
 - [**11399번 ATM**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/11399_ATM)
 - [**13305번 주유소**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm/13305_gas_station)
