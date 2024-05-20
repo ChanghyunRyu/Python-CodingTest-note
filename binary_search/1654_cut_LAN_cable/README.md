@@ -22,32 +22,31 @@
 
 ---
 ### Problem Solved Check
-- [x] 1회 
-- [ ] 2회 
+- [x] 1회 24/04/02
+- [x] 2회 24/05/20
 - [ ] 3회
 ~~~
 import sys
 
 k, n = map(int, input().split())
-cable = []
+cables = []
 for _ in range(k):
-    cable.append(int(sys.stdin.readline().rstrip()))
+    cables.append(int(sys.stdin.readline().rstrip()))
 
-start, end = 1, max(cable)
+start = 1
+end = max(cables)
+
 result = 0
-
 while start <= end:
     mid = (start+end)//2
-    total = 0
-    for c in cable:
-        total += c//mid
-    if total < n:
-        start, end = start, mid-1
+    count = 0
+    for c in cables:
+        count += c//mid
+    if count < n:
+        end = mid-1
     else:
         result = mid
-        start, end = mid+1, end
-
+        start = mid+1
 print(result)
-
 
 ~~~
