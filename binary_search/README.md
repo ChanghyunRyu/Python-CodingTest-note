@@ -17,6 +17,7 @@
 - [**떡볶이 떡 만들기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/rice_cake)
 - [**1654번 랜선 자르기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/1654_cut_LAN_cable)
 - [**2110번 공유기 설치**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/2110_router_install)
+- [**2470번 두 용액**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/2470_two_solution)
 - [**2512번 예산**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/2512_budget)
 - [**2805번 나무 자르기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/2805_cut_wood)
 - [**10815번 숫자 카드**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/10815_number_card)
