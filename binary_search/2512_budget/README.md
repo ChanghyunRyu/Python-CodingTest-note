@@ -25,3 +25,28 @@
 - 첫째 줄에는 배정된 예산들 중 최댓값인 정수를 출력한다. 
 
 ---
+### Problem Solved Check
+- [x] 1회 24/05/20
+- [ ] 2회
+- [ ] 3회
+~~~
+n = int(input())
+cities = list(map(int, input().split()))
+budget = int(input())
+
+start = 1
+end = max(cities)
+result = 1
+while start <= end:
+    mid = (start+end)//2
+    count = 0
+    for city in cities:
+        count += min(mid, city)
+    if count > budget:
+        end = mid-1
+    else:
+        result = mid
+        start = mid+1
+print(result)
+
+~~~
