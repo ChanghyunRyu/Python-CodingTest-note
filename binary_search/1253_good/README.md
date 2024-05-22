@@ -19,3 +19,37 @@ N개의 수가 주어지면 그 중에서 좋은 수의 개수는 몇 개인지 
 
 - 좋은 수의 개수를 첫 번째 줄에 출력한다.
 ---
+### Problem Solved Check
+- [x] 1회 24/05/22
+- [ ] 2회
+- [ ] 3회
+
+문제에서 숫자를 정렬하여 준다는 조건이 없었는데 이분 탐색을 바로 사용하여 틀린 판정을 받았었다.
+~~~
+n = int(input())
+nums = list(map(int, input().split()))
+nums.sort()
+
+
+def bisearch(target, numbers):
+    for i in range(len(numbers)):
+        start = i+1
+        end = len(numbers)-1
+        while start <= end:
+            mid = (start+end)//2
+            if numbers[i]+numbers[mid] == target:
+                return True
+            elif numbers[i]+numbers[mid] > target:
+                end = mid-1
+            else:
+                start = mid+1
+    return False
+
+
+count = 0
+for j in range(n):
+    if bisearch(nums[j], nums[:j]+nums[j+1:]):
+        count += 1
+print(count)
+
+~~~

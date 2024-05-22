@@ -15,6 +15,7 @@
 
 - [**부품 찾기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/finding_parts)
 - [**떡볶이 떡 만들기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/rice_cake)
+- [**1253번 좋다**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/1253_good)
 - [**1300번 K번째 숫자**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/1300_Kth_number)
 - [**1654번 랜선 자르기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/1654_cut_LAN_cable)
 - [**2110번 공유기 설치**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/2110_router_install)
