@@ -23,3 +23,4 @@
 - [**2805번 나무 자르기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/2805_cut_wood)
 - [**10815번 숫자 카드**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/10815_number_card)
 - [**10816번 숫자 카드 2**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/10816_number_card_2)
+- [**12015번 가장 긴 증가하는 부분 수열 2**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/12015_logest_increasing_subsequence)

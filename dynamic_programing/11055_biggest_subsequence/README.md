@@ -16,3 +16,23 @@
 - 첫째 줄에 수열 A의 합이 가장 큰 증가하는 부분 수열의 합을 출력한다.
 
 ---
+### Problem Solved Check
+- [x] 1회 24/05/21
+- [ ] 2회
+- [ ] 3회
+~~~
+n = int(input())
+sequence = list(map(int, input().split()))
+
+dp = [0]*n
+dp[0] = sequence[0]
+
+for i in range(1, n):
+    dp[i] = sequence[i]
+    for j in range(i, 0, -1):
+        if sequence[j-1] < sequence[i]:
+            dp[i] = max(dp[i], dp[j-1]+sequence[i])
+
+print(max(dp))
+
+~~~
