@@ -20,5 +20,15 @@
 - 첫째 줄에 상근이가 구할 수 있는 두 수의 합 중 최솟값과 최댓값을 출력한다.
 
 ---
+~~~
+a, b = input().split()
 
+a_only_five = int(a.replace('6', '5'))
+b_only_five = int(b.replace('6', '5'))
 
+a_only_six = int(a.replace('5', '6'))
+b_only_six = int(b.replace('5', '6'))
+
+print('{} {}'.format(a_only_five+b_only_five, a_only_six+b_only_six))
+
+~~~

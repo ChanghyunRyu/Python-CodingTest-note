@@ -16,3 +16,40 @@
 - s는 알파벳 소문자로만 이루어져 있습니다.
 
 ---
+### Problem Solved Check
+- [x] 1회 24/06/03
+- [ ] 2회
+- [ ] 3회
+
+문제 해결 접근 자체는 잘 했으나, 
+문자열 반복이 9->10, 99->100 등으로 늘어나는 경우 문자열 길이가 달라진다는 것을 생각하지 못 했다.
+
+~~~
+import math
+
+
+def solution(s):
+    answer = len(s)
+    word_count = 1
+    while word_count <= len(s)//2:
+        length = 0
+        before_word = ''
+        count = 0
+        for i in range(math.ceil(len(s)/word_count)):
+            # 현재 끊은 단어 구하기
+            if (i+1)*word_count < len(s):
+                now_word = s[i*word_count: (i+1)*word_count]
+            else:
+                now_word = s[i*word_count:]
+            if before_word == now_word:
+                count += 1
+                if count == 2 or len(str(count-1)) != len(str(count)):
+                    length += 1
+            else:
+                length += len(now_word)
+                before_word = now_word
+                count = 1
+        answer = min(answer, length)
+        word_count += 1
+    return answer
+~~~
