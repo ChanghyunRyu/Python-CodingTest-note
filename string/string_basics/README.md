@@ -32,3 +32,16 @@ def solution(s):
     return True
 
 ~~~
+
+책에서는 해당 문제를 정규표현식으로 푸는 방법 역시 제공하므로 해당 풀이로 풀어보았다.  
+해당 풀이는 정규표현식을 한 번 보고 오는 것이 좋다.
+
+~~~
+import re
+
+
+def solution(s):
+    if (len(s) == 4 or len(s) == 6) and re.match('^\d*$', s):
+        return True
+    return False
+~~~
