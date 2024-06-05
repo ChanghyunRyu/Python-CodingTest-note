@@ -8,7 +8,7 @@
 
 ***Catagory***
 
-- [**자료 구조**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure)
+- [**자료 구조(Data Structure)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure)
 - [**그리디 알고리즘(Greedy Algorithm)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/greedy_algorithm)
 - [**그래프 이론(Graph Theory)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/graph_theory)
 - [**다이나믹 프로그래밍(Dynamic Programing)**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing)
