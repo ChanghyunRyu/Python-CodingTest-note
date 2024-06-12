@@ -11,8 +11,6 @@ def solution(numbers):
         npi = list(itertools.permutations(numbers, i))
         for np in npi:
             np = list(np)
-            if np[0] == 0:
-                continue
             if len(np) == 1:
                 num = np[0]
             else:
@@ -23,7 +21,7 @@ def solution(numbers):
 
 
 def chk_prime_number(n):
-    if n == 1:
+    if n < 2:
         return False
     for i in range(2, n//2+1):
         if n % i == 0:

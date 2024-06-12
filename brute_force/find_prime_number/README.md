@@ -20,6 +20,8 @@
 - [ ] 2회
 - [ ] 3회
 
+순열을 통해 숫자를 뽑아내는 것을 생각해내긴했지만 이를 통해 숫자를 만드는 과정은 매끄럽지 못 했다.
+
 ~~~
 import itertools
 
@@ -34,8 +36,6 @@ def solution(numbers):
         npi = list(itertools.permutations(numbers, i))
         for np in npi:
             np = list(np)
-            if np[0] == 0:
-                continue
             if len(np) == 1:
                 num = np[0]
             else:
@@ -46,7 +46,7 @@ def solution(numbers):
 
 
 def chk_prime_number(n):
-    if n == 1:
+    if n < 2:
         return False
     for i in range(2, n//2+1):
         if n % i == 0:
