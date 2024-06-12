@@ -1,4 +1,6 @@
-# # Brute force algorithm
+# Brute force algorithm
+
+----
 
 brute: 무식한, force: 힘, 무식한 힘으로 문제를 해결한다는 뜻.
 
@@ -18,3 +20,4 @@ brute: 무식한, force: 힘, 무식한 힘으로 문제를 해결한다는 뜻.
 
 ### Problem Solved
 
+- [**모의고사**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/brute_force/trial_exam)
