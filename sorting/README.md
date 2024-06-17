@@ -47,7 +47,7 @@
 
 - [**단어 정렬**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/sorting/1181_word_sorting)
 - [**두 개 뽑아서 더하기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/sorting/two_selection_plus)
-- [**H-Index**]()
+- [**H-Index**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/sorting/h_index)
 - [**1191번 단어 정렬**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/sorting/1181_word_sorting)
 - [**1427번 소트인사이드**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/sorting/1427_sort_in_side)
 
