@@ -1,4 +1,4 @@
-## 소트인사이드
+## 1427번 소트인사이드
 
 ------
 시간 제한: 2초, 메모리 제한: 128 MB
@@ -14,5 +14,13 @@
 - 첫째 줄에 자리수를 내림차순으로 정렬한 수를 출력한다.
 
 ------
+~~~
+arr = input()
+tmp = []
+for i in arr:
+    tmp.append(int(i))
+tmp.sort(reverse=True)
+for t in tmp:
+    print(t, end='')
 
-
+~~~
