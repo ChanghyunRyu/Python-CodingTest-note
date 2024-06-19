@@ -25,3 +25,31 @@ n명이 입국심사를 위해 줄을 서서 기다리고 있습니다.
 - 심사관은 1명 이상 100,000명 이하입니다.
 
 ---
+### Problem Solved Check
+- [x] 1회 24/06/19
+- [ ] 2회
+- [ ] 3회
+~~~
+def solution(n, times):
+    start = 1
+    end = min(times)*n
+    while start <= end:
+        mid = (start+end)//2
+        if check_time(mid, times, n):
+            answer = mid
+            end = mid-1
+        else:
+            start = mid+1
+    return answer
+
+
+def check_time(chk_time, times, people):
+    temp = 0
+    for time in times:
+        temp += chk_time//time
+    if temp >= people:
+        return True
+    else:
+        return False
+        
+~~~
