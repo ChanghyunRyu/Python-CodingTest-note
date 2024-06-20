@@ -31,7 +31,7 @@
 
 ---
 ### Problem Solved Check
-- [ ] 1회 
+- [X] 1회 24/06/20 
 - [ ] 2회
 - [ ] 3회
 
@@ -43,32 +43,35 @@ from bisect import bisect_left
 
 def solution(info, query):
     answer = []
-    applicants = info_to_applicant(info)
+    applicants = info_to_dict(info)
     for q in query:
-        key = q.split()
-        score = int(key.pop())
-        key = ''.join(key)
-        key = key.replace('and', '').replace(' ', '').replace('-', '')
-        pass_applicants = applicants[key]
-
-        result = len(pass_applicants) - bisect_left(pass_applicants, score)
-        answer.append(result)
+        key, score = query_to_key(q)
+        pass_applicant = applicants[key]
+        number = len(pass_applicant) - bisect_left(pass_applicant, score)
+        answer.append(number)
     return answer
 
 
-def info_to_applicant(info):
-    applicant = defaultdict(list)
+def info_to_dict(info):
+    result = defaultdict(list)
     for i in info:
-        person = i.split()
-        score = int(person.pop())
-        applicant[''.join(person)].append(score)
-
+        tokens = i.split()
+        score = int(tokens.pop())
+        result[''.join(tokens)].append(score)
         for j in range(4):
-            candi = list(combinations(person, j))
-            for c in candi:
-                applicant[''.join(c)].append(score)
-    for i in applicant:
-        applicant[i].sort()
-    return applicant
-    
+            cbi = combinations(tokens, j)
+            for c in cbi:
+                result[''.join(c)].append(score)
+    for i in result:
+        result[i].sort()
+    return result
+
+
+def query_to_key(query):
+    tokens = query.split()
+    score = tokens.pop()
+    key = ''.join(tokens)
+    key = key.replace('and', '').replace(' ', '').replace('-', '')
+    return key, int(score)
+
 ~~~
