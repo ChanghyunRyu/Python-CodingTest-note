@@ -18,6 +18,7 @@
 - [**순위 검색**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/rank_search)
 - [**입국 심사**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/immigration_screening)
 - [**징검 다리**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/stepping_stones)
+- [**징검 다리 건너기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/cross_the_stepping_stones)
 - [**1253번 좋다**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/1253_good)
 - [**1300번 K번째 숫자**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/1300_Kth_number)
 - [**1654번 랜선 자르기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/binary_search/1654_cut_LAN_cable)
