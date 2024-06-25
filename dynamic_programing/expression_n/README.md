@@ -28,19 +28,20 @@ N 사용횟수의 최솟값을 return 하도록 solution 함수를 작성하세�
 - [ ] 3회
 ~~~
 def solution(n, number):
-    dp = [set() for i in range(9)]
+    dp = [set() for _ in range(9)]
     for i in range(1, 9):
-        case = dp[i]
-        case.add(int(str(n)*i))
+        now = dp[i]
+        now.add(int(str(n) * i))
         for j in range(1, i):
             for k in dp[j]:
                 for l in dp[i-j]:
-                    case.add(k+l)
-                    case.add(k-l)
-                    case.add(k*l)
-                    if l != 0 and k != 0:
-                        case.add(k//l)
-        if number in case:
+                    now.add(k+l)
+                    if k-l > 0:
+                        now.add(k-l)
+                    now.add(k*l)
+                    if k != 0 and l != 0:
+                        now.add(k//l)
+        if number in now:
             return i
     return -1
     
