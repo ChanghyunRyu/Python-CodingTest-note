@@ -87,6 +87,7 @@ LIS는 동적 계획법으로 풀 수 있는 대표적인 알고리즘으로 다
 - [**개미 전사**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/ant_warrior)
 - [**등굣길**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/on_the_way_to_school)
 - [**N으로 표현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/expression_n)
+- [**도둑질**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/thief)
 - [**1149번 RGB 거리**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/1149_RGB_street)
 - [**1904번 01타일**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/1904_01_tile)
 - [**1912번 연속합**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/dynamic_programing/1912_continuous_sum)
