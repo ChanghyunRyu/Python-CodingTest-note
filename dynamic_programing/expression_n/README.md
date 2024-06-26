@@ -23,7 +23,7 @@ N 사용횟수의 최솟값을 return 하도록 solution 함수를 작성하세�
 
 ---
 ### Problem Solved Check
-- [ ] 1회 
+- [X] 1회 24/06/25
 - [ ] 2회
 - [ ] 3회
 ~~~
