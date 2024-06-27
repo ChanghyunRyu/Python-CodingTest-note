@@ -21,3 +21,37 @@
 - 배포는 하루에 한 번만 할 수 있으며, 하루의 끝에 이루어진다고 가정합니다. 예를 들어 진도율이 95%인 작업의 개발 속도가 하루에 4%라면 배포는 2일 뒤에 이루어집니다.
 
 ---
+### Problem Solved Check
+- [x] 1회 24/06/26
+- [ ] 2회
+- [ ] 3회
+- 
+~~~
+from collections import deque
+import math
+
+
+def solution(progresses, speeds):
+    answer = []
+    q = deque()
+    for i in range(len(progresses)):
+        progress, speed = progresses[i], speeds[i]
+        clear = int(math.ceil((100-progress)/speed))
+        q.append(clear)
+
+    before_clear = 0
+    count = 0
+    while q:
+        now_clear = q.popleft()
+        if now_clear > before_clear:
+            if before_clear != 0:
+                answer.append(count)
+            count = 1
+        else:
+            count += 1
+        before_clear = max(before_clear, now_clear)
+    else:
+        answer.append(count)
+    return answer
+    
+~~~

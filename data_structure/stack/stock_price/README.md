@@ -14,6 +14,10 @@ n초 간의 주가를 초 단위로 기록한 배열 prices가 매개변수로 �
 - prices의 길이는 2 이상 100,000 이하입니다.
 
 ---
+### Problem Solved Check
+- [x] 1회 24/06/26
+- [ ] 2회
+- [ ] 3회
 ~~~
 def solution(prices):
     answer = [0]*len(prices)
