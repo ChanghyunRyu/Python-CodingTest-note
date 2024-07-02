@@ -31,6 +31,7 @@
 ****
 ### Problem Solved
 
+- [**디스크 컨트롤러**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure/queue%26heap/disk_controller)
 - [**1202번 보석 도둑**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/queue%26heap/jewel%20thief)
 - [**1715번 최소힙**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/queue%26heap/1927_min_heap)
 - [**11000번 강의실 배정**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/queue%26heap/classroom%20assignment)
