@@ -55,6 +55,7 @@ shortestPath(i, j, k) = min(shortestPath(i, j, k-1), shortestPath(i, k, k-1)+sho
 
 ### Problem solved
 
+- [**순위**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/ranking)
 - [**1238번 파티**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/1238_party)
 - [**1504번 특정한 최단 경로**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/1504_specific_shortest_path)
 - [**1753번 최단 경로**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/shortest_path/1753_shortest_path)
