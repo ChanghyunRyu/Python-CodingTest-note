@@ -44,6 +44,7 @@ def find_parent(x):
 
 ### Problem Solved
 
+- [**섬 연결하기**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure/disjoint_set/connecting_islands)
 - [**1717번 집합의 표현**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure/disjoint_set/1717_expression_of_set)
 - [**1976번 여행 가자**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure/disjoint_set/1976_lets_travel)
 - [**4195번 친구 네트워크**](https://github.com/ChanghyunRyu/Python_CodingTest_note/tree/main/data_structure/disjoint_set/4195_friends_network)
