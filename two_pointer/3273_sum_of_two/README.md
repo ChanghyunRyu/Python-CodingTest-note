@@ -19,3 +19,23 @@ ai + aj = x (1 ≤ i < j ≤ n)을 만족하는 (ai, aj)쌍의 수를 구하는 
 - 문제의 조건을 만족하는 쌍의 개수를 출력한다.
 
 ---
+~~~
+n = int(input())
+nums = list(map(int, input().split()))
+target = int(input())
+
+nums.sort()
+answer = 0
+start, end = 0, len(nums)-1
+while start < end:
+    if nums[start]+nums[end] > target:
+        end -= 1
+    elif nums[start]+nums[end] == target:
+        answer += 1
+        start += 1
+    else:
+        start += 1
+
+print(answer)
+
+~~~
