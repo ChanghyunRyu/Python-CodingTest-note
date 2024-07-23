@@ -32,6 +32,10 @@ n개의 요소를 가진 튜플을 n-튜플(n-tuple)이라고 하며, 다음과 
 - return 하는 배열의 길이가 1 이상 500 이하인 경우만 입력으로 주어집니다.
 
 ---
+### Problem Solved Check
+- [x] 1회 24/05/21
+- [x] 2회 24/07/23
+- [ ] 3회
 ~~~
 def solution(s):
     answer = []
@@ -56,4 +60,39 @@ def solution(s):
         answer.append(list(tmp[i]-tmp[i-1])[0])
     return answer
    
+~~~
+~~~
+def solution(s):
+    answer = []
+    tmp_sets = str_to_set(s)
+    tmp_sets = sorted(tmp_sets, key=lambda x: len(x))
+    before_set = set()
+    for now_set in tmp_sets:
+        answer.append(list(now_set-before_set)[0])
+        before_set = now_set
+    return answer
+
+
+def str_to_set(string):
+    result = []
+    in_set = False
+    num_tmp = []
+    tmp_set = set()
+    for i in range(1, len(string)-1):
+        if string[i] == '{':
+            tmp_set = set()
+            in_set = True
+        if string[i] == '}':
+            tmp_set.add(int(''.join(num_tmp)))
+            num_tmp = []
+            result.append(tmp_set)
+            in_set = False
+        if in_set:
+            if string[i].isdigit():
+                num_tmp.append(string[i])
+            elif string[i] == ',':
+                tmp_set.add(int(''.join(num_tmp)))
+                num_tmp = []
+    return result
+    
 ~~~
