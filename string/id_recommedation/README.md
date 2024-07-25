@@ -28,7 +28,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/06/05
-- [ ] 2회
+- [x] 2회 24/07/25
 - [ ] 3회
 
 파이썬에 지원하는 내장 함수들을 잘 알고 있었다면 쉽게 풀 수 있는 문제인 것 같다.
@@ -73,5 +73,54 @@ def solution(new_id):
     while len(answer) < 3:
         answer = ''.join([answer, answer[-1]])
     return answer
+
+~~~
+~~~
+import re
+
+
+def solution(new_id):
+    new_id = new_id.lower()
+    new_id = delete_not_characters(new_id)
+    new_id = delete_double_dot(new_id)
+    new_id = delete_start_end_dot(new_id)
+    if new_id == '':
+        new_id = 'a'
+    new_id = slice_id(new_id)
+    new_id = add_letters(new_id)
+    return new_id
+
+
+def delete_not_characters(string):
+    string = re.sub('[^0-9a-z\-\.\_]', '', string)
+    return string
+
+
+def delete_double_dot(string):
+    string = re.sub('\.\.+', '.', string)
+    return string
+
+
+def delete_start_end_dot(string):
+    if string[0] == '.':
+        string = string[1:]
+    if string != '' and string[len(string)-1] == '.':
+        string = string[:-1]
+    return string
+
+
+def slice_id(string):
+    if len(string) >= 16:
+        string = string[:15]
+    if string[len(string)-1] == '.':
+        string = string[:-1]
+    return string
+
+
+def add_letters(string):
+    last_letter = string [-1]
+    while len(string) < 3:
+        string = string + last_letter
+    return string
 
 ~~~
