@@ -23,7 +23,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/06/07
-- [ ] 2회
+- [x] 2회 24/07/27
 - [ ] 3회
 
 ~~~
@@ -41,4 +41,18 @@ def solution(num):
         return solution(num//2)
     else:
         return solution((num*3)+1)
+~~~
+~~~
+def solution(n):
+    count = 0
+    while n != 1:
+        if count == 500:
+            return -1
+        count += 1
+        if n % 2 == 0:
+            n //= 2
+        else:
+            n = 3*n + 1
+    return count
+    
 ~~~
