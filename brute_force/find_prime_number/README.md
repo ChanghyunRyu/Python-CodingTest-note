@@ -17,7 +17,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/06/12
-- [ ] 2회
+- [x] 2회 24/08/01
 - [ ] 3회
 
 순열을 통해 숫자를 뽑아내는 것을 생각해내긴했지만 이를 통해 숫자를 만드는 과정은 매끄럽지 못 했다.
@@ -50,6 +50,31 @@ def chk_prime_number(n):
         return False
     for i in range(2, n//2+1):
         if n % i == 0:
+            return False
+    return True
+
+~~~
+~~~
+import itertools
+
+
+def solution(numbers):
+    answer = set()
+    for i in range(1, len(numbers)+1):
+        for permutation in itertools.permutations(numbers, i):
+            permutation = list(permutation)
+            number = int(''.join(permutation))
+            if get_prime_numbers(number):
+                answer.add(number)
+    return len(answer)
+
+
+def get_prime_numbers(number):
+    m = int(number**0.5)
+    if number == 0 or number == 1:
+        return False
+    for i in range(2, m+1):
+        if number % i == 0:
             return False
     return True
 
