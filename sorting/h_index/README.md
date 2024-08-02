@@ -17,7 +17,7 @@ H-Index는 과학자의 생산성과 영향력을 나타내는 지표입니다.
 ---
 ### Problem Solved Check
 - [x] 1회 24/06/17
-- [ ] 2회
+- [x] 2회 24/08/02
 - [ ] 3회
 ~~~
 def solution(citations):
@@ -32,4 +32,19 @@ def solution(citations):
             answer = i
             break
     return answer
+~~~
+~~~
+def solution(citations):
+    count = [0]*(max(citations)+1)
+    for i in citations:
+        count[i] += 1
+    answer = 0
+    prefix = [0]*len(count)
+    prefix[len(prefix)-1] = count[len(count)-1]
+    for i in range(len(count)-2, -1, -1):
+        prefix[i] = prefix[i+1]+count[i]
+        if prefix[i] >= i:
+            answer = max(i, answer)
+    return answer
+    
 ~~~
