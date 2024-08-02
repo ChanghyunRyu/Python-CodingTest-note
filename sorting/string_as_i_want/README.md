@@ -20,12 +20,18 @@ n이 1이면 각 단어의 인덱스 1의 문자 "u", "e", "a"로 strings를 정
 ---
 ### Problem Solved Check
 - [x] 1회 24/06/17
-- [ ] 2회
+- [x] 2회 24/08/02
 - [ ] 3회
 ~~~
 def solution(strings, n):
     answer = strings
     answer.sort(key=lambda x: (x[n], x))
+    return answer
+    
+~~~
+~~~
+def solution(strings, n):
+    answer = sorted(strings, key=lambda k: (k[n], k))
     return answer
     
 ~~~
