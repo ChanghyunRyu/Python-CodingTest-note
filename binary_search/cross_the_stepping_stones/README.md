@@ -28,7 +28,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/06/20
-- [ ] 2회
+- [x] 2회 24/08/06
 - [ ] 3회
 
 ~~~
@@ -54,6 +54,33 @@ def chk_cross_stones(stones, k, check):
                 return False
         else:
             count = 0
+    return True
+    
+~~~
+~~~
+def solution(stones, k):
+    answer = 0
+    start, end = 1, max(stones)
+    while start <= end:
+        mid = (start+end)//2
+        if check_step_stones(mid, stones, k):
+            answer = mid
+            start = mid+1
+        else:
+            end = mid-1
+    return answer
+
+
+def check_step_stones(target, stones, k):
+    chance = k-1
+    for stone in stones:
+        if stone >= target:
+            chance = k-1
+            continue
+        if chance > 0:
+            chance -= 1
+        else:
+            return False
     return True
     
 ~~~
