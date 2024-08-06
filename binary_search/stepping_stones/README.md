@@ -1,4 +1,4 @@
-## 징검다리
+  ## 징검다리
 
 ---
 
@@ -34,7 +34,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/06/20
-- [ ] 2회
+- [x] 2회 24/08/06
 - [ ] 3회
 
 ~~~
@@ -69,6 +69,37 @@ def chk_length(rocks, length, n):
                 return False
         else:
             stack.append(r)
+    return True
+    
+~~~
+~~~
+def solution(distance, rocks, n):
+    rocks.sort()
+    rocks.append(distance)
+    answer = 0
+    start, end = 0, distance
+    while start <= end:
+        mid = (start+end)//2
+        if check_distance(mid, rocks, n):
+            answer = mid
+            start = mid+1
+        else:
+            end = mid-1
+    return answer
+
+
+def check_distance(distance, rocks, n):
+    before_rock = 0
+    chance = n
+    for rock in rocks:
+        dis = rock-before_rock
+        if dis < distance:
+            if chance > 0:
+                chance -= 1
+                continue
+            else:
+                return False
+        before_rock = rock
     return True
     
 ~~~
