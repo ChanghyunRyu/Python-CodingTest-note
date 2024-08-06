@@ -32,7 +32,7 @@
 ---
 ### Problem Solved Check
 - [X] 1회 24/06/20 
-- [ ] 2회
+- [X] 2회 24/08/06
 - [ ] 3회
 
 ~~~
@@ -74,4 +74,59 @@ def query_to_key(query):
     key = key.replace('and', '').replace(' ', '').replace('-', '')
     return key, int(score)
 
+~~~
+~~~
+from itertools import combinations
+from bisect import bisect_left
+
+
+def solution(info, query):
+    result = []
+    dictionary = info_to_dict(info)
+    for q in query:
+        temp = get_successful_candidates(q, dictionary)
+        result.append(temp)
+    return result
+
+
+def info_to_dict(info):
+    result = {}
+    for applicant in info:
+        tokens = applicant.split()
+        insert_token_dict(tokens, result)
+    for key in result:
+        result[key].sort()
+    return result
+
+
+def insert_token_dict(tokens, dictionary):
+    score = int(tokens[4])
+    tokens = tokens[:4]
+    for i in range(len(tokens)+1):
+        for combination in combinations(tokens, i):
+            key = ''.join(combination)
+            if key in dictionary:
+                dictionary[key].append(score)
+            else:
+                dictionary[key] = [score]
+
+
+def get_successful_candidates(query, dictionary):
+    tokens = query.split()
+    score = int(tokens[len(tokens)-1])
+    tokens = tokens[:len(tokens)-1]
+    temp = []
+    for token in tokens:
+        if token == '-' or token == 'and':
+            continue
+        else:
+            temp.append(token)
+    final_query = ''.join(temp)
+    if final_query in dictionary:
+        applicants = dictionary[final_query]
+        result = len(applicants) - bisect_left(applicants, score)
+    else:
+        result = 0
+    return result
+    
 ~~~
