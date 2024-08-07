@@ -21,7 +21,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/06/20
-- [ ] 2회
+- [x] 2회 24/08/07
 - [ ] 3회
 
 검사를 하면서 정렬을 해주지 않으면 뒤의 나오는 전화번호가 앞에서 나오는 전화번호의 접두어가 되는 케이스를 놓치게 된다.
@@ -35,6 +35,26 @@ def solution(phone_book):
             if phone_number[:j] in book:
                 return False
         book[phone_number] = True
+    return True
+    
+~~~
+~~~
+def solution(phone_book):
+    phone_book = sorted(phone_book, key=len)
+    check_book = {}
+    for phone_number in phone_book:
+        flag = insert_check_book(phone_number, check_book)
+        if not flag:
+            return False
+    return True
+
+
+def insert_check_book(number, check):
+    for i in range(1, len(number)):
+        if number[:i] in check:
+            return False
+    if number not in check:
+        check[number] = True
     return True
     
 ~~~
