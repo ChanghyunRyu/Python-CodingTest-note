@@ -17,6 +17,10 @@
 n번째 피보나치 수를 1234567으로 나눈 나머지를 리턴하는 함수, solution을 완성해 주세요.
 
 ---
+### Problem Solved Check
+- [x] 1회 24/06/24
+- [ ] 2회 24/08/08
+- [ ] 3회
 ~~~
 def solution(n):
     f_num = [0]*(n+1)
@@ -26,4 +30,13 @@ def solution(n):
     answer = f_num[-1]
     return answer
     
+~~~
+~~~
+def solution(n):
+    fib = [0]*(n+1)
+    fib[1] = 1
+    for i in range(2, n+1):
+        fib[i] = fib[i-1]+fib[i-2]
+    return fib[n] % 1234567
+
 ~~~
