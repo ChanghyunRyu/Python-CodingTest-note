@@ -22,6 +22,10 @@
 - 삼각형을 이루고 있는 숫자는 0 이상 9,999 이하의 정수입니다.
 
 ---
+### Problem Solved Check
+- [x] 1회 24/06/24 
+- [x] 2회 24/08/09
+- [ ] 3회
 ~~~
 def solution(triangle):
     dp = [[0]*i for i in range(1, len(triangle)+1)]
@@ -36,4 +40,19 @@ def solution(triangle):
                 dp[i][j] = max(dp[i-1][j-1], dp[i-1][j])+triangle[i][j]
     return max(dp[len(dp)-1])
     
+~~~
+~~~
+def solution(triangle):
+    answer =[ [0]*i for i in range(1, len(triangle)+1)]
+    answer[0][0] = triangle[0][0]
+    for i in range(1, len(answer)):
+        for j in range(len(answer[i])):
+            left = right = 0
+            if j-1 >= 0:
+                left = answer[i-1][j-1]
+            if j < len(answer[i-1]):
+                right = answer[i-1][j]
+            answer[i][j] = triangle[i][j] + max(left, right)
+    return max(answer[len(answer)-1])
+
 ~~~
