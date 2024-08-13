@@ -15,3 +15,4 @@ def solution(money):
 
 print(solution([1, 2, 3, 1]))
 print(solution([10, 5, 3, 1, 10]))
+print(solution([0, 0, 2, 1, 0, 0, 1]))
