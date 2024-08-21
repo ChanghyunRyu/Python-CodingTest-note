@@ -21,7 +21,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/07/02 
-- [ ] 2회
+- [x] 2회 24/08/21
 - [ ] 3회
 ~~~
 import heapq
@@ -48,5 +48,34 @@ def solution(jobs):
                 heapq.heappush(q, (new_task[1], new_task[0]))
     answer = int(sum(done)/len(done))
     return answer
+    
+~~~
+~~~
+import heapq
+from collections import deque
+
+
+def solution(jobs):
+    answer = 0
+    jobs.sort(key=lambda x: (x[0], x[1]))
+    jobs = deque(jobs)
+
+    n = len(jobs)
+    hq = []
+    now_time = 0
+
+    while jobs or hq:
+        if hq:
+            now_work = heapq.heappop(hq)
+            now_time += now_work[0]
+            answer += now_time-now_work[1]
+        else:
+            new_work = jobs.popleft()
+            now_time = new_work[0]
+            heapq.heappush(hq, (new_work[1], new_work[0]))
+        while jobs and jobs[0][0] <= now_time:
+            new_work = jobs.popleft()
+            heapq.heappush(hq, (new_work[1], new_work[0]))
+    return answer//n
     
 ~~~
