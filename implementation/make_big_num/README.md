@@ -17,3 +17,25 @@ number에서 k 개의 수를 제거했을 때 만들 수 있는 수 중 가장 �
 - k는 1 이상 number의 자릿수 미만인 자연수입니다.
 
 ---
+### Problem Solved Check
+- [x] 1회 24/10/02
+- [ ] 2회
+- [ ] 3회
+~~~
+def solution(number, k):
+    stack = []
+    count = 0
+    for num in number:
+        if not stack:
+            stack.append(num)
+            continue
+        while stack and int(stack[-1]) < int(num) and count < k:
+            stack.pop()
+            count += 1
+        stack.append(num)
+    while count < k:
+        count += 1
+        stack.pop()
+    return ''.join(stack)
+    
+~~~
