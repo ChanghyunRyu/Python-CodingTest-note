@@ -26,7 +26,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/07/15
-- [ ] 2회
+- [x] 2회 24/10/07
 - [ ] 3회
 ~~~
 def solution(numbers, hand):
