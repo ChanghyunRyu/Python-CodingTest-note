@@ -13,7 +13,7 @@ numbers의 모든 수들에 대하여 각 수의 f 값을 배열에 차례대로
 ---
 ### Problem Solved Check
 - [x] 1회  24/07/19
-- [ ] 2회
+- [x] 2회  24/10/07
 - [ ] 3회
 ~~~
 def solution(numbers):
