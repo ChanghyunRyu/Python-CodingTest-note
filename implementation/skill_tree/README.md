@@ -25,7 +25,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/07/23
-- [ ] 2회
+- [x] 2회 24/10/08
 - [ ] 3회
 ~~~
 def solution(skill, skill_trees):
