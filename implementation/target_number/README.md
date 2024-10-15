@@ -28,7 +28,7 @@ n개의 음이 아닌 정수들이 있습니다.
 ---
 ### Problem Solved Check
 - [X] 1회 24/07/27  
-- [ ] 2회
+- [X] 2회 24/10/15
 - [ ] 3회
 ~~~
 import sys
@@ -47,4 +47,18 @@ def get_target(numbers, target):
         else:
             return 0
     return get_target(numbers[1:], target-numbers[0]) + get_target(numbers[1:], target+numbers[0])
+~~~
+~~~
+def solution(numbers, target):
+    answer = 0
+    stack = [(0, 0)]
+    while stack:
+        now, idx = stack.pop()
+        if idx == len(numbers)-1:
+            if now+numbers[idx] == target or now-numbers[idx] == target:
+                answer += 1
+            continue
+        stack.append((now+numbers[idx], idx+1))
+        stack.append((now-numbers[idx], idx+1))
+    return answer
 ~~~

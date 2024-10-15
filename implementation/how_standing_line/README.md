@@ -24,7 +24,7 @@ k번째 방법을 return하는 solution 함수를 완성해주세요.
 ---
 ### Problem Solved Check
 - [x] 1회 24/07/25
-- [ ] 2회
+- [x] 2회 24/10/14
 - [ ] 3회
 ~~~
 from math import factorial
