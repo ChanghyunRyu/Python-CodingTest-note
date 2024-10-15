@@ -36,6 +36,8 @@ n개의 요소를 가진 튜플을 n-튜플(n-tuple)이라고 하며, 다음과 
 - [x] 1회 24/05/21
 - [x] 2회 24/07/23
 - [x] 3회 24/10/15
+
+보통 풀이를 할 때, 문자열을 하나씩 보면서 푸는 방법을 많이 사용했으나, split() 함수를 사용하여 쉽게 풀 수 없는지 확인해야 할 것.(3번째 풀이)
 ~~~
 def solution(s):
     answer = []
@@ -60,41 +62,6 @@ def solution(s):
         answer.append(list(tmp[i]-tmp[i-1])[0])
     return answer
    
-~~~
-~~~
-def solution(s):
-    answer = []
-    tmp_sets = str_to_set(s)
-    tmp_sets = sorted(tmp_sets, key=lambda x: len(x))
-    before_set = set()
-    for now_set in tmp_sets:
-        answer.append(list(now_set-before_set)[0])
-        before_set = now_set
-    return answer
-
-
-def str_to_set(string):
-    result = []
-    in_set = False
-    num_tmp = []
-    tmp_set = set()
-    for i in range(1, len(string)-1):
-        if string[i] == '{':
-            tmp_set = set()
-            in_set = True
-        if string[i] == '}':
-            tmp_set.add(int(''.join(num_tmp)))
-            num_tmp = []
-            result.append(tmp_set)
-            in_set = False
-        if in_set:
-            if string[i].isdigit():
-                num_tmp.append(string[i])
-            elif string[i] == ',':
-                tmp_set.add(int(''.join(num_tmp)))
-                num_tmp = []
-    return result
-    
 ~~~
 ~~~
 def solution(s):
@@ -125,4 +92,19 @@ def string_to_set(s):
             temp.add(int(s[start:i]))
             start = i+1
     return result
+    
+~~~
+~~~
+def solution(s):
+    answer = {}
+    data = s[2:-2].split('},{')
+
+    data.sort(key=len)
+    for d in data:
+        nums = d.split(',')
+        for num in nums:
+            if num not in answer:
+                answer[int(num)] = True
+    return list(answer)
+    
 ~~~
