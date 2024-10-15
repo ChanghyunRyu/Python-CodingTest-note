@@ -28,6 +28,5 @@ def solution(tickets):
             q.append((next_cities[i], list(result), new_graph))
     return answer
 
-
-# print(solution([["ICN", "JFK"], ["HND", "IAD"], ["JFK", "HND"]]))
+print(solution([["ICN", "JFK"], ["HND", "IAD"], ["JFK", "HND"]]))
 print(solution([["ICN", "SFO"], ["ICN", "ATL"], ["SFO", "ATL"], ["ATL", "ICN"], ["ATL", "SFO"]]))
