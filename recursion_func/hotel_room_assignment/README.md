@@ -39,7 +39,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/06/11
-- [ ] 2회
+- [x] 2회 24/10/15
 - [ ] 3회
 
 
@@ -112,4 +112,30 @@ def assign_room(room_number):
         record[room_number] = assign_number+1
     return assign_number
     
+~~~
+
+복습 시 틀린 점: 여러번 풀어 보았기에 바로 풀이는 알았지만 재귀 함수 이후, 딕셔너리에 방 번호를 배정하는 부분을 까먹어서 오답이 나왔다.
+
+~~~
+import sys
+sys.setrecursionlimit(10**6)
+
+
+def solution(k, room_number):
+    answer = []
+    hotel = {}
+    for number in room_number:
+        answer.append(assign_room(hotel, number))
+    return answer
+
+
+def assign_room(hotel, room_number):
+    if room_number not in hotel:
+        hotel[room_number] = room_number+1
+        return room_number
+    else:
+        assign_number = assign_room(hotel, hotel[room_number])
+        hotel[room_number] = assign_number
+        return assign_number
+        
 ~~~
