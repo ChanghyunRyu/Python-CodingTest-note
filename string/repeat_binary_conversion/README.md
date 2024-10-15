@@ -22,7 +22,7 @@
 ### Problem Solved Check
 - [x] 1회 24/06/04 
 - [x] 2회 24/07/24
-- [ ] 3회
+- [x] 3회 24/10/15
 
 ~~~
 def solution(s):
@@ -70,4 +70,26 @@ def binary_conversion(number):
         number = number // 2
     temp.append(str(number))
     return ''.join(temp[::-1])
+~~~
+~~~
+def solution(s):
+    zero = count = 0
+    while s != '1':
+        count += 1
+        ones = 0
+        for i in range(len(s)):
+            if s[i] == '0':
+                zero += 1
+            else:
+                ones += 1
+        s = number_to_binary(ones)
+    return [count, zero]
+
+
+def number_to_binary(num):
+    binary = []
+    while num != 0:
+        num, remain = divmod(num, 2)
+        binary.append(str(remain))
+    return ''.join(binary[::-1])
 ~~~
