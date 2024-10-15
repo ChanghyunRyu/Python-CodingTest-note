@@ -35,7 +35,7 @@ n개의 요소를 가진 튜플을 n-튜플(n-tuple)이라고 하며, 다음과 
 ### Problem Solved Check
 - [x] 1회 24/05/21
 - [x] 2회 24/07/23
-- [ ] 3회
+- [x] 3회 24/10/15
 ~~~
 def solution(s):
     answer = []
@@ -95,4 +95,34 @@ def str_to_set(string):
                 num_tmp = []
     return result
     
+~~~
+~~~
+def solution(s):
+    answer = []
+    sets = string_to_set(s[1:len(s)-1])
+    sets.sort(key=len)
+    before_set = set()
+    for s in sets:
+        new_int = s-before_set
+        answer.append(list(new_int)[0])
+        before_set = s
+    return answer
+
+
+def string_to_set(s):
+    result = []
+    is_set = False
+    for i in range(len(s)):
+        if s[i] == '{':
+            temp = set()
+            start = i+1
+            is_set = True
+        elif s[i] == '}':
+            temp.add(int(s[start:i]))
+            result.append(temp)
+            is_set = False
+        elif is_set and s[i] == ',':
+            temp.add(int(s[start:i]))
+            start = i+1
+    return result
 ~~~
