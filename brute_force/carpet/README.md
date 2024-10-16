@@ -21,7 +21,7 @@ Leo가 본 카펫에서 갈색 격자의 수 brown, 노란색 격자의 수 yell
 ### Problem Solved Check
 - [x] 1회 24/06/12
 - [x] 2회 24/07/31
-- [ ] 3회
+- [x] 3회 24/10/16
 
 ~~~
 def solution(brown, yellow):
@@ -41,16 +41,13 @@ def solution(brown, yellow):
 ~~~
 ~~~
 def solution(brown, yellow):
-    answer = []
-    x_plus_y = brown//2 + 2
-    x_mul_y = brown+yellow
+    x_plus_y = brown//2+2
     for i in range(1, x_plus_y):
-        x, y = i, x_plus_y-i
-        if x*y == x_mul_y:
-            answer.append(x)
-            answer.append(y)
+        x = i
+        y = x_plus_y-i
+        if x*y == brown+yellow:
+            answer = [y, x]
             break
-    answer.sort(reverse=True)
     return answer
     
 ~~~
