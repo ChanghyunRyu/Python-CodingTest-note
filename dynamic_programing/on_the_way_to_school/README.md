@@ -25,7 +25,7 @@
 ### Problem Solved Check
 - [x] 1회 24/06/26
 - [x] 2회 24/08/09
-- [ ] 3회
+- [x] 3회 24/10/17
 ~~~
 def solution(m, n, puddles):
     way = [[0]*m for _ in range(n)]
@@ -64,3 +64,5 @@ def solution(m, n, puddles):
     return dp[n-1][m-1]
     
 ~~~
+오른쪽과 아래쪽으로만 움직인다는 부분 중요!(dfs를 사용 안 해도 괜찮음)
+격자 크기가 주어지는 경우 이를 2차원 배열로 옮길 때, 가로세로 혼동하지 않게 주의!!
