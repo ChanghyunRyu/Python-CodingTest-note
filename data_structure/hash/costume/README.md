@@ -20,7 +20,7 @@
 ### Problem Solved Check
 - [x] 1회 24/06/20
 - [x] 2회 24/08/07
-- [ ] 3회
+- [x] 3회 24/10/17
 ~~~
 def solution(clothes):
     closet = {}
