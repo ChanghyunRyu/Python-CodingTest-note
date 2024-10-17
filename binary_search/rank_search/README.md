@@ -75,6 +75,7 @@ def query_to_key(query):
     return key, int(score)
 
 ~~~
+bisect_left 사용법 숙지할 것!, 조건이 바뀔 수 있을 경우 해당 바뀌는 조건들을 모두 자료에 추가하는 방법 생각할 것!
 ~~~
 from itertools import combinations
 from bisect import bisect_left
