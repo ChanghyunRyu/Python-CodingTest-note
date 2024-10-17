@@ -28,7 +28,7 @@ n명이 입국심사를 위해 줄을 서서 기다리고 있습니다.
 ### Problem Solved Check
 - [x] 1회 24/06/19
 - [x] 2회 24/08/05
-- [ ] 3회
+- [x] 3회 24/10/17
 ~~~
 def solution(n, times):
     start = 1
@@ -76,4 +76,22 @@ def check_times(target, n, times):
     else:
         return False
         
+~~~
+~~~
+def solution(n, times):
+    start, end = 0, min(times)*n
+    answer = end
+    while start <= end:
+        mid = (start+end)//2
+
+        temp = 0
+        for time in times:
+            temp += mid//time
+        if temp >= n:
+            answer = mid
+            end = mid-1
+        else:
+            start = mid+1
+    return answer
+    
 ~~~
