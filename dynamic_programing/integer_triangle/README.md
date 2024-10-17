@@ -25,7 +25,7 @@
 ### Problem Solved Check
 - [x] 1회 24/06/24 
 - [x] 2회 24/08/09
-- [ ] 3회
+- [x] 3회 24/10/17
 ~~~
 def solution(triangle):
     dp = [[0]*i for i in range(1, len(triangle)+1)]
