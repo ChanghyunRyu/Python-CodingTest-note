@@ -27,7 +27,7 @@
 ### Problem Solved Check
 - [x] 1회 24/06/25
 - [x] 2회 24/08/08
-- [ ] 3회
+- [x] 3회 24/10/17
 
 ~~~
 from collections import defaultdict
