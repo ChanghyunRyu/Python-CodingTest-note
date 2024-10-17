@@ -16,8 +16,11 @@ n초 간의 주가를 초 단위로 기록한 배열 prices가 매개변수로 �
 ---
 ### Problem Solved Check
 - [x] 1회 24/06/26
-- [ ] 2회
+- [x] 2회 24/10/17
 - [ ] 3회
+
+스택을 사용한다고 알고 풀어서 쉬운 문제 그 전 값과 비교하는 문제는 스택을 사용할 수 도 있다는 걸 염두에 두어야 할 것!!
+
 ~~~
 def solution(prices):
     answer = [0]*len(prices)
@@ -30,6 +33,27 @@ def solution(prices):
             count += period
         stack.append((now_price, count))
         answer[i] = count
+    return answer
+    
+~~~
+~~~
+def solution(prices):
+    s = []
+    answer = [0]*(len(prices))
+    for i in range(len(prices)):
+        price = prices[i]
+        if not s:
+            s.append((price, i))
+            continue
+        while s and s[-1][0] > price:
+            _, idx = s.pop()
+            answer[idx] = i-idx
+        s.append((price, i))
+    while s:
+        _, idx = s.pop()
+        answer[idx] = len(prices)-idx-1
+    answer[-1] = 0
+    answer[-2] = 1
     return answer
     
 ~~~
