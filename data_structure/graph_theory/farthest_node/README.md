@@ -21,7 +21,7 @@ n개의 노드가 있는 그래프가 있습니다. 각 노드는 1부터 n까�
 ---
 ### Problem Solved Check
 - [x] 1회 24/06/26
-- [ ] 2회
+- [x] 2회 24/10/18
 - [ ] 3회
 ~~~
 from collections import deque
