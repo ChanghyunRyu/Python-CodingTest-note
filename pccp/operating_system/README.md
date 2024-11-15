@@ -30,7 +30,7 @@ answer[0]은 모든 프로그램들이 종료되는 시각을 의미하며, answ
 ---
 ### Problem Solved Check
 - [x] 1회 24/10/01 
-- [ ] 2회
+- [x] 2회 24/11/15
 - [ ] 3회
 ~~~
 import heapq
@@ -55,4 +55,30 @@ def solution(program):
     answer[0] = now
     return answer
     
+~~~
+~~~
+import heapq
+
+
+def solution(program):
+    answer = [0]*11
+    program.sort(key=lambda x: x[1], reverse=True)
+    time = 0
+    process = []
+    while process or program:
+        while process:
+            now = heapq.heappop(process)
+            answer[now[0]] += time-now[1]
+            time += now[2]
+            while program and program[-1][1] <= time:
+                heapq.heappush(process, program.pop())
+        if program:
+            temp = program.pop()
+            heapq.heappush(process, temp)
+            time = temp[1]
+            while program and program[-1][1] <= time:
+                heapq.heappush(process, program.pop())
+    answer[0] = time
+    return answer
+
 ~~~
