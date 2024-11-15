@@ -26,7 +26,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/09/23
-- [ ] 2회
+- [x] 2회 24/11/15
 - [ ] 3회
 ~~~
 def solution(command):
@@ -46,7 +46,4 @@ def solution(command):
             idx = (idx-1) % 4
     return answer
 
-
-print(solution("GRGLGRG"))
-print(solution("GRGRGRB"))
 ~~~
