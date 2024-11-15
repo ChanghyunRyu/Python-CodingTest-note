@@ -30,7 +30,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/09/23
-- [ ] 2회
+- [x] 2회 24/11/15
 - [ ] 3회
 ~~~
 import heapq
