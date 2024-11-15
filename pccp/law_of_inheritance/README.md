@@ -38,3 +38,31 @@ return 하도록 solution 함수를 완성해주세요.
 - queries의 원소는 [n, p] 형태입니다.
 - 1 ≤ n ≤ 16
 - 1 ≤ p ≤ 4n-1
+
+---
+### Problem Solved Check
+- [x] 1회 24/09/15
+- [x] 2회 24/11/15
+- [ ] 3회
+~~~
+inheritance = {'Rr': ['RR', 'Rr', 'Rr', 'rr'],
+               'RR': ['RR', 'RR', 'RR', 'RR'],
+               'rr': ['rr', 'rr', 'rr', 'rr']}
+
+
+def get_answer(query):
+    generation, sequence = query
+    if generation == 1:
+        return 'Rr'
+    p_generation = generation-1
+    p_sequence, idx = divmod(sequence-1, 4)
+    return inheritance[get_answer([p_generation, p_sequence])][idx]
+
+
+def solution(queries):
+    answer = []
+    for q in queries:
+        answer.append(get_answer(q))
+    return answer
+    
+~~~
