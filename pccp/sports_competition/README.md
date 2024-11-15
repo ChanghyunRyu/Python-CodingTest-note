@@ -20,7 +20,7 @@
 ---
 ### Problem Solved Check
 - [x] 1회 24/09/06
-- [ ] 2회
+- [X] 2회 24/11/15
 - [ ] 3회
 
 ~~~
@@ -46,5 +46,20 @@ def return_max_score(students):
     return result
     
 ~~~
+~~~
+from itertools import permutations
 
+
+def solution(ability):
+    answer = 0
+    case_table = list(range(len(ability)))
+    sport = len(ability[0])
+    for case in permutations(case_table, sport):
+        temp = 0
+        for i in range(sport):
+            temp += ability[case[i]][i]
+        answer = max(answer, temp)
+    return answer
+    
+~~~
 
